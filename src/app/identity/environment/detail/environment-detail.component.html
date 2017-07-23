@@ -1,0 +1,11 @@
+<div class="page container ">
+    <h2>{{environment?.project.name}}</h2><br>
+    
+    <p><label class="control-label">Name:</label> {{environment?.name}}</p>
+    <p><label>Public Key:</label> {{environment?.key}}</p>
+    <p><label>Token expires:</label> {{environment?.tokenExpiresIn}}</p>
+
+    <p>
+        <button class="btn btn-primary" (click)="gotoCrm(environment?.key)">Access CRM</button>
+    </p>
+</div>

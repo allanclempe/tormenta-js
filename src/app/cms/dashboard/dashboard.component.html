@@ -1,0 +1,13 @@
+<div class="page container">
+    <button [routerLink]="['/cms/schema']" class="btn btn-primary">New Schema</button>
+    <div class="card-columns">
+        <div class="card" *ngFor="let schema of schemas">
+            <div class="card-block">
+                <h4 class="card-title">{{schema.name}}</h4>
+                <p class="card-text"></p>
+                <button class="btn btn-default" [routerLink]="['../schema', schema._id]">Edit</button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,8 @@
+<div class="page container">
+    <form class="form-signin" novalidate (ngSubmit)="login(form.value, form.valid)" [formGroup]="form">
+        <div class="form-group">
+            <input type="text" name="publicKey" class="form-control" autofocus required placeholder="Public Key" formControlName="publicKey">
+        </div>
+        <button class="btn btn-primary btn-block">Sign in</button>
+    </form>
+</div>
