@@ -1,8 +1,17 @@
-<div class="page container">
+<div class="page" fxLayout="row" fxLayoutAlign="center center">
     <form class="form-signin" novalidate (ngSubmit)="login(form.value, form.valid)" [formGroup]="form">
-        <div class="form-group">
-            <input type="text" name="publicKey" class="form-control" autofocus required placeholder="Public Key" formControlName="publicKey">
-        </div>
-        <button class="btn btn-primary btn-block">Sign in</button>
+        <md-card class="default login">
+            <md-card-header>
+                <md-card-title><h3>Backend Sign In</h3></md-card-title>
+                <md-card-subtitle><p>Entre your credentials below</p></md-card-subtitle>
+            </md-card-header>
+            <md-card-content>
+                <md-input-container style="width:100%" class="md-block">
+                    <input mdInput placeholder="Public Key" autofocus formControlName="publicKey">
+                </md-input-container>
+
+                <button md-button type="submit">Sign in</button>
+            </md-card-content>
+        </md-card>
     </form>
 </div>

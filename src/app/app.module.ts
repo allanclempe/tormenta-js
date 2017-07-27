@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import 'hammerjs';
+
 
 import {
   NgModule,
@@ -75,8 +79,10 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgbModule,
     ReactiveFormsModule,
+    FlexLayoutModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
   ],
   /**

@@ -6,7 +6,8 @@ import { AppStore } from '../app.store';
 
 @Component({
     selector: 'crm-login',
-    templateUrl: 'login.component.html'
+    templateUrl: 'login.component.html',
+    styleUrls: ['./login.component.scss'],
 })
 
 export class CrmLoginComponent implements OnInit {

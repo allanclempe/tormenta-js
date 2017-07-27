@@ -27,7 +27,8 @@ module.exports = {
     { rel: 'apple-touch-icon', sizes: '144x144', href: '/assets/icon/apple-icon-144x144.png' },
     { rel: 'apple-touch-icon', sizes: '152x152', href: '/assets/icon/apple-icon-152x152.png' },
     { rel: 'apple-touch-icon', sizes: '180x180', href: '/assets/icon/apple-icon-180x180.png' },
-
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
     /**
      * <link> tags for android web app icons
      */

@@ -1,20 +1,21 @@
-<div class="dashboard">
+<div class="page">
+
     <table class="table">
         <thead>
-        <tr>
-            <th>Project</th>
-            <th>Environments</th>
-        </tr>
+            <tr>
+                <th>Project</th>
+                <th>Environments</th>
+            </tr>
         </thead>
-        <tbody> 
-        <tr *ngFor="let project of projects">
-            <td class="w-25"><span>{{project.name}}</span></td>
-            <td class="w-75">
-                <ul class="list-inline environments">
-                    <li class="list-inline-item" *ngFor="let env of project.environments"><a [routerLink]="['../environment/', env._id]">{{env.name}}</a></li>
-                </ul>
-            </td>
-        </tr>
+        <tbody>
+            <tr *ngFor="let project of projects">
+                <td class="w-25"><span>{{project.name}}</span></td>
+                <td class="w-75">
+                    <ul class="list-inline environments">
+                        <li class="list-inline-item" *ngFor="let env of project.environments"><a [routerLink]="['../environment/', env._id]">{{env.name}}</a></li>
+                    </ul>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
